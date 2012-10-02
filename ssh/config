@@ -1,0 +1,16 @@
+Host erebos
+	User cnlpete
+	Hostname erebos.local
+
+Host mitharas
+	User cnlpete
+	Hostname mitharas.de
+
+Host cau
+	User has
+	Hostname sauron.informatik.uni-kiel.de
+
+Host cau-mp
+	User hschade
+	HostName ukzizm-s03.izm.uni-kiel.de
+
