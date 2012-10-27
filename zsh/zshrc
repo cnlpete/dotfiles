@@ -24,3 +24,6 @@ source $ZSH/oh-my-zsh.sh
 alias "git log"="git log --graph --oneline --decorate"
 
 PATH=$PATH:~/bin
+
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
