@@ -10,7 +10,10 @@ Host cau
 	User has
 	Hostname sauron.informatik.uni-kiel.de
 
-Host cau-mp
+Host cau.mp
 	User hschade
 	HostName ukzizm-s03.izm.uni-kiel.de
 
+Host cau.mip
+  User hschade
+  HostName nil.mip.informatik.uni-kiel.de
