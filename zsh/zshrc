@@ -9,3 +9,8 @@ fi
 
 # Customize to your needs...
 
+alias ard='vlc rtsp://daserste.edges.wowza.gl-systemhaus.de/live/mp4:daserste_int_576'
+alias zdf='vlc rtsp://3gp-livestreaming1.zdf.de/liveedge2/de10_v1_710.sdp'
+alias zdfneo='vlc rtsp://3gp-livestreaming1.zdf.de/liveedge2/de09_v1_710.sdp'
+alias zdfkultur='vlc rtsp://3gp-livestreaming1.zdf.de/liveedge2/de07_v1_710.sdp'
+alias zdfinfo='vlc rtsp://3gp-livestreaming1.zdf.de/liveedge2/de08_v1_710.sdp'
