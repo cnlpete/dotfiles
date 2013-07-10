@@ -1,19 +1,24 @@
-Host erebos
-	User cnlpete
-	Hostname erebos.local
+Host n9
+	HostName 192.168.178.21
+	User developer
+	IdentityFile ~/.ssh/n9/qtc_id_rsa
 
 Host mitharas
+	HostName mitharas.de
 	User cnlpete
-	Hostname mitharas.de
+
+Host erebos
+	HostName Erebos.local
+	User cnlpete
+
+Host hermera
+	HostName Hermera.local
+	User cnlpete
 
 Host cau
+	HostName frodo.informatik.uni-kiel.de
 	User has
-	Hostname sauron.informatik.uni-kiel.de
 
-Host cau.mp
-	User hschade
+Host cau-mp
 	HostName ukzizm-s03.izm.uni-kiel.de
-
-Host cau.mip
-  User hschade
-  HostName nil.mip.informatik.uni-kiel.de
+	User hschade
