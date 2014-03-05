@@ -14,11 +14,3 @@ Host erebos
 Host hermera
 	HostName Hermera.local
 	User cnlpete
-
-Host cau
-	HostName frodo.informatik.uni-kiel.de
-	User has
-
-Host cau-mp
-	HostName ukzizm-s03.izm.uni-kiel.de
-	User hschade
