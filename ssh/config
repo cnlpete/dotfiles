@@ -1,5 +1,5 @@
 Host n9
-	HostName 192.168.178.21
+	HostName 192.168.2.100
 	User developer
 	IdentityFile ~/.ssh/n9/qtc_id_rsa
 
