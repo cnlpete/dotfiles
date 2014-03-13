@@ -20,6 +20,7 @@ folders="git gnupg ssh zsh"
 # change to the dotfiles directory
 if [ ! -d ${dir} ] ; then
   echo "${dir} does not exists, aborting"
+  exit 1
 else
   cd ${dir}
 
