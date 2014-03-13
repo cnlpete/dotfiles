@@ -13,7 +13,7 @@ export olddir=~/dotfiles_old
 # list of files/folders to symlink in homedir
 folders="git gnupg ssh zsh"
 
-sh=/bin/sh
+sh=/bin/zsh
 ##########
 
 # create dotfiles_old in homedir
