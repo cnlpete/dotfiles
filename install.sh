@@ -27,7 +27,13 @@ else
 
   # run all available install-skripts
   for folder in $folders; do
-      [ -e ${dir}/${folder}/install.sh ] && echo ${folder} && $sh ${dir}/${folder}/install.sh
+    if [ -e ${dir}/${folder}/install.sh ] ; then
+      if [ ! -x ${dir}/${folder}/install.sh ] ; then
+        chmod +x ${dir}/${folder}/install.sh
+      fi
+      echo ${folder}
+      $sh ${dir}/${folder}/install.sh
+    fi
   done
 fi
 
