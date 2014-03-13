@@ -21,7 +21,7 @@ install_zsh () {
           sudo apt-get install zsh
           install_zsh
       # If the platform is OS X, tell the user to install zsh :)
-      elif [[ $platform == 'Darwin' ]]; then
+      elif [ $platform = 'Darwin' ]; then
           echo "Please install zsh, then re-run this script!"
           exit
       fi
