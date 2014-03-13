@@ -15,17 +15,17 @@ folders="git gnupg ssh zsh"
 ##########
 
 # create dotfiles_old in homedir
-[ ! -d $olddir ] && echo -n "Creating $olddir for backup of any existing dotfiles" && mkdir -p $olddir
+[ ! -d ${olddir} ] && echo -n "Creating ${olddir} for backup of any existing dotfiles" && mkdir -p ${olddir}
 
 # change to the dotfiles directory
-if [ ! -d $dir ] ; then
-  echo "$dir does not exists, aborting"
+if [ ! -d ${dir} ] ; then
+  echo "${dir} does not exists, aborting"
 else
-  cd $dir
+  cd ${dir}
 
   # run all available install-skripts
   for folder in $folders; do
-      [ -e $dir/$folder/install.sh ] && echo $folder && $dir/$folder/install.sh
+      [ -e ${dir}/${folder}/install.sh ] && echo ${folder} && ${dir}/${folder}/install.sh
   done
 fi
 
