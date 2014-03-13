@@ -32,7 +32,7 @@ else
         chmod +x ${dir}/${folder}/install.sh
       fi
       echo ${folder}
-      $sh ${dir}/${folder}/install.sh
+      ${dir}/${folder}/install.sh
     fi
   done
 fi
