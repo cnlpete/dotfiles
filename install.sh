@@ -29,6 +29,7 @@ else
   for folder in $folders; do
     if [ -e ${dir}/${folder}/install.sh ] ; then
       if [ ! -x ${dir}/${folder}/install.sh ] ; then
+        echo "making ${folder}/install.sh executable"
         chmod +x ${dir}/${folder}/install.sh
       fi
       echo ${folder}
