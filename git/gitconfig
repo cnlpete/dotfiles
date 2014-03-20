@@ -9,3 +9,5 @@
 	file-view-vpane-position = 920
 [push]
 	default = simple
+[alias]
+	slog = log --show-signature
