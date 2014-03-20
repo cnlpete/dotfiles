@@ -5,9 +5,9 @@
 [giggle]
 	main-window-maximized = true
 	main-window-geometry = 0x0+0+0
-	history-view-vpane-position = 682
+	history-view-vpane-position = 401
 	main-window-view = HistoryView
-	file-view-vpane-position = 920
+	file-view-vpane-position = 631
 [push]
 	default = simple
 [alias]
