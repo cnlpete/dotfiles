@@ -11,3 +11,4 @@
 	default = simple
 [alias]
 	slog = log --show-signature
+	scommit = commit -S
