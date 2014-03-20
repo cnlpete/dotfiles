@@ -12,3 +12,4 @@
 [alias]
 	slog = log --show-signature
 	scommit = commit -S
+	smerge = merge -S --no-ff
