@@ -5,7 +5,7 @@ install_zsh () {
   # Test to see if zshell is installed.  If it is:
   if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     # Clone my oh-my-zsh repository from GitHub only if it isn't already present
-    if [[ ! -d $dir/.zprezto/ ]]; then
+    if [[ ! -d ~/.zprezto/ ]]; then
       git clone --recursive https://github.com/cnlpete/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
     fi
     # Set the default shell to zsh if it isn't currently set to zsh
