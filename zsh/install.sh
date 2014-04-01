@@ -26,5 +26,5 @@ install_zsh () {
 install_zsh
 
 #run zsh script
-/bin/zsh install_zsh.sh
+/bin/zsh ${dir}/zsh/install_zsh.sh
 
