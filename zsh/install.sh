@@ -29,4 +29,5 @@ install_zsh
 /bin/zsh ${dir}/zsh/install_zsh.sh
 
 [ ! -L ~/.zsh_aliases ] && mv ~/.zsh_aliases ${olddir}/zsh_aliases && ln -s ${dir}/zsh/zsh_aliases ~/.zsh_aliases && echo "zsh/aliases"
+[ ! -L ~/.zsh_favlist ] && mv ~/.zsh_favlist ${olddir}/zsh_favlist && ln -s ${dir}/zsh/zsh_favlist ~/.zsh_favlist && echo "zsh/favlist"
 
