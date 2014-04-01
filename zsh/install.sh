@@ -28,3 +28,5 @@ install_zsh
 #run zsh script
 /bin/zsh ${dir}/zsh/install_zsh.sh
 
+[ ! -L ~/.zsh_aliases ] && mv ~/.zsh_aliases ${olddir}/zsh_aliases && ln -s ${dir}/zsh/zsh_aliases ~/.zsh_aliases && echo "zsh/aliases"
+
