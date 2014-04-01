@@ -23,20 +23,8 @@ install_zsh () {
   fi
 }
 
-install_zprezto () {
-  # Test to see if zshell is installed.  If it is:
-  if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
-    # Clone my oh-my-zsh repository from GitHub only if it isn't already present
-    if [[ ! -d ~/.zprezto/ ]]; then
-      git clone --recursive https://github.com/cnlpete/prezto.git "~/.zprezto"
-    fi
-  fi
-}
-
 install_zsh
 
-## get zprezto
-install_zprezto
-
+#run zsh script
 /bin/zsh install_zsh.sh
 
