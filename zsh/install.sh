@@ -1,13 +1,9 @@
-#!/bin/zsh
+#!/bin/sh
 
 ## install zsh
 install_zsh () {
   # Test to see if zshell is installed.  If it is:
   if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
-    # Clone my oh-my-zsh repository from GitHub only if it isn't already present
-    if [[ ! -d ~/.zprezto/ ]]; then
-      git clone --recursive https://github.com/cnlpete/prezto.git "~/.zprezto"
-    fi
     # Set the default shell to zsh if it isn't currently set to zsh
     if [ ! $(echo $SHELL) = $(which zsh) ]; then
       chsh -s $(which zsh)
@@ -27,18 +23,20 @@ install_zsh () {
   fi
 }
 
+install_zprezto () {
+  # Test to see if zshell is installed.  If it is:
+  if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
+    # Clone my oh-my-zsh repository from GitHub only if it isn't already present
+    if [[ ! -d ~/.zprezto/ ]]; then
+      git clone --recursive https://github.com/cnlpete/prezto.git "~/.zprezto"
+    fi
+  fi
+}
+
 install_zsh
 
-
 ## get zprezto
+install_zprezto
 
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  [ ! -L "${ZDOTDIR:-$HOME}/.${rcfile:t}" ] && ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
-
-setopt EXTENDED_GLOB
-for rcfile in "${dir}"/zsh/^install.sh(.N); do
-  [ ! -L "${ZDOTDIR:-$HOME}/.${rcfile:t}" ] && ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
+/bin/zsh install_zsh.sh
 
