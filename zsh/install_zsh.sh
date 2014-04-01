@@ -2,7 +2,7 @@
 
 # Clone my oh-my-zsh repository from GitHub only if it isn't already present
 if [[ ! -d ~/.zprezto/ ]]; then
-  git clone --recursive https://github.com/cnlpete/prezto.git "~/.zprezto"
+  git clone --recursive https://github.com/cnlpete/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 fi
 
 setopt EXTENDED_GLOB
