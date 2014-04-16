@@ -1,7 +1,7 @@
 [user]
 	name = Hauke Schade
 	email = cnlpete@cnlpete.de
-	signingKey = DA21D293
+	signingKey = 0xC9A1FE6F665AEEE3
 [giggle]
 	main-window-maximized = true
 	main-window-geometry = 0x0+0+0
