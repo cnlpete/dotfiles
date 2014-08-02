@@ -16,5 +16,5 @@ Host hermera
 	User hauke
 
 Host raspbmc
-	HostName Raspbmc.local
+	HostName Raspbmc.fritz.box
 	User pi
