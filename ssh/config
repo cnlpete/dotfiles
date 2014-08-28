@@ -5,7 +5,7 @@ Host n9
 
 Host mitharas
 	HostName mitharas.de
-	User cnlpete
+	User hauke
 
 Host erebos
 	HostName Erebos.local
